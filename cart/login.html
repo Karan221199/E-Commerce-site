@@ -1,0 +1,67 @@
+<html>
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+  <style>
+
+h2 {text-align:center;}
+p {text-align:center;}
+form {
+ margin-left: 40%; 
+}
+
+button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  width:110px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+input{
+  width: 34%;
+  padding: 10px 10px;
+  
+  box-sizing: border-box;
+}
+
+
+</style>
+  </head>
+  <body onload="getStoredProducts();">
+    
+    
+<br><br><br>
+
+  <h1 align="center">Login</h1>
+  <br>
+  <br>
+  
+  <form >
+ <label>Enter Username</label>
+  <input id="username" name="username" type="text" placeholder="Username" class="form-control" style="width: 30%;" >
+  <br>
+  <br>
+  <label>Enter Password</label>
+  <input id="password" name="password" type="password" placeholder="Password" class="form-control" style="width: 30%;">
+  <br>
+  <br>
+  <br>
+  </form>
+<script src="login.js" type="text/javascript"></script>
+<button id="login"  role="button" onclick="login()" style="margin-left:42%">Login</button><br>
+<h3 align="center">Not a User?
+<button id="signup"  role="button" onclick="signup()" style="margin-left:0%">Signup</button>
+
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+  
+</html>
